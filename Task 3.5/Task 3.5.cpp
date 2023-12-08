@@ -1,11 +1,16 @@
 ﻿#include <iostream>
-using namespace std;
+
+using std::cout;
+using std::cin;
+using std::endl;
 
 int main()
 {
-    const int BORDER = 5;
+    const int BORDER = 3;
     const int AREA_TRIAN = (BORDER + 1) * BORDER / 2;
     int matrix[AREA_TRIAN];
+
+    cout << "Write matrix elements" << endl;
 
     for (int i = 0; i < AREA_TRIAN; ++i)
     {
@@ -61,8 +66,10 @@ int main()
         }
     }
 
+    cout << "Result matrix: " << endl;
+
     for (int i = 0; i < AREA_TRIAN; ++i)
     {
-        cout << result[i] << ' ';
+        cout << result[i] << ' '; 
     }
 }
